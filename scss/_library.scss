@@ -1,0 +1,21 @@
+// Functions & Mixins
+
+// Convert pixels to Rem
+
+@function pxToRem($px) {
+  @return calc($px / 16) + rem;
+}
+
+//
+
+@mixin flex($align: true, $justify: true) {
+  display: flex;
+  
+  @if $align {
+    align-items: center;
+  }
+
+  @if $justify {
+    justify-content: center;
+  }
+}

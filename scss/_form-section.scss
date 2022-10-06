@@ -1,0 +1,83 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: pxToRem(30);
+
+  .try-free {
+    padding: pxToRem(21) pxToRem(80);
+    font-size: pxToRem(15);
+    border-radius: pxToRem(12);
+  
+    color: white;
+    background-color: $blue;
+    box-shadow: 0 pxToRem(8) rgba(#000, 0.15);
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: pxToRem(18);
+    padding: pxToRem(24);
+    border-radius: pxToRem(12);
+
+    background-color: white;
+    box-shadow: 0 pxToRem(8) rgba(#000, 0.15);
+    
+    .submit-btn {
+      width: 100%;
+      font-size: 1rem;
+      letter-spacing: pxToRem(1);
+      padding: pxToRem(16);
+      border-radius: pxToRem(6);
+      border: none;
+      color: white;
+      background-color: $green;
+      box-shadow: 0 pxToRem(4) darken($green , 5);
+      transition: all ease-in 0.05s;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(pxToRem(4));
+        box-shadow: none;
+      }
+    }
+
+    .input-container {
+      position: relative;
+      width: 100%;
+
+      input {
+        width: 100%;
+        padding: pxToRem(16);
+        font-weight: 600;
+        border-radius: pxToRem(6);
+        border: solid pxToRem(1) rgba(#000, 0.2);
+      }
+
+      label {
+        position: absolute;
+        top: pxToRem(14);
+        right: pxToRem(5);
+        display: flex;
+        align-items: center;
+        gap: pxToRem(5);
+
+        font-size: pxToRem(12);
+      }
+    }
+
+    .terms-and-services {
+      font-size: pxToRem(11);
+      color: $grayish-blue;
+      max-width: pxToRem(235);
+
+      span {
+        font-weight: 700;
+        color: $red;
+      }
+    }
+  }
+}

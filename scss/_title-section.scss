@@ -1,0 +1,16 @@
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: pxToRem(18);
+  color: white;
+
+  h1 {
+    min-width: pxToRem(320);
+    font-size: pxToRem(27);
+  }
+
+  p {
+    min-width: pxToRem(325);
+  }
+}

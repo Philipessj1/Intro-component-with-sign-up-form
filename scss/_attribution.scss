@@ -1,0 +1,19 @@
+.attribution { 
+  position: absolute;
+  bottom: pxToRem(10);
+  left: calc(50vw - pxToRem(132.5));
+
+  font-size: pxToRem(11); 
+  text-align: center;
+  color: black;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
