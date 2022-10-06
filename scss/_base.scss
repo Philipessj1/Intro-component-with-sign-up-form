@@ -18,6 +18,8 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+  padding-top: pxToRem(90);
+  padding-bottom: pxToRem(10);
   background-color: $red;
   background-image: url(../assets/bg-intro-mobile.png);
 }
@@ -29,5 +31,5 @@ body {
   align-items: center;
   gap: pxToRem(60);
   text-align: center;
-  margin: pxToRem(90) 0 pxToRem(45) 0;
+  margin-bottom: pxToRem(20);
 }
